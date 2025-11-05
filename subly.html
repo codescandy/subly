@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Subscribe Link Generator | Create Auto Subscribe Link Online Free</title>
+
+  <!-- ✅ Meta SEO -->
+  <meta name="description" content="Generate your YouTube Subscribe Link instantly! Use this free YouTube Subscribe Link Generator tool to create an auto-subscribe URL for your channel and grow your subscribers fast.">
+  <meta name="keywords" content="YouTube Subscribe Link Generator, create youtube subscribe link, youtube subscribe link maker, youtube subscription link generator, youtube auto subscribe link, generate youtube subscribe url, youtube sub link generator, subscribe button link for youtube, youtube channel link with subscribe, youtube growth tools, free youtube subscribe link generator online, youtube subscribe link generator tool">
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- ✅ Open Graph / Social Preview -->
+  <meta property="og:title" content="Free YouTube Subscribe Link Generator">
+  <meta property="og:description" content="Create your YouTube auto-subscribe link in one click — fast, simple, and free.">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="author" content="Jitu Chauhan">
+
+  <!-- ✅ Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9fafb, #eef2ff);
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+
+  <!-- Card -->
+  <div class="w-full max-w-lg bg-white/80 backdrop-blur-md shadow-xl rounded-2xl p-8 border border-gray-200">
+    
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <div class="flex items-center justify-center mb-2">
+        <svg class="w-10 h-10 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19.615 3.184C21.318 3.49 22.5 5.045 22.5 6.769v10.462c0 1.724-1.182 3.279-2.885 3.585-2.401.439-6.558.939-9.615.939-3.057 0-7.214-.5-9.615-.939C.682 20.51-.5 18.955-.5 17.231V6.769C-.5 5.045.682 3.49 2.385 3.184 4.786 2.745 8.943 2.25 12 2.25c3.057 0 7.214.495 9.615.934zM10 8.25v7.5L16.5 12 10 8.25z"/>
+        </svg>
+      </div>
+      <h1 class="text-3xl font-bold text-gray-800">Free YouTube Subscribe Link Generator</h1>
+      <p class="text-gray-500 mt-1 text-sm">Create a quick auto-subscribe link for your channel — 100% free tool.</p>
+    </div>
+
+    <!-- Input -->
+    <div class="space-y-4">
+      <div>
+        <label for="youtubeLink" class="text-sm font-medium text-gray-700 mb-1 block">Enter YouTube Channel or Video URL</label>
+        <input id="youtubeLink" type="text" placeholder="https://youtube.com/@YourChannel"
+          class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition">
+      </div>
+
+      <!-- Generate Button -->
+      <button id="generateBtn"
+        class="w-full py-3 bg-gradient-to-r from-red-600 to-pink-500 text-white rounded-xl font-semibold hover:opacity-90 transition">
+        Generate Subscribe Link
+      </button>
+    </div>
+
+    <!-- Output -->
+    <div id="outputSection" class="hidden mt-8 space-y-3">
+      <div>
+        <label class="text-sm font-medium text-gray-700 mb-1 block">Your Subscribe Link</label>
+        <textarea id="result" readonly
+          class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 resize-none"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-3">
+        <button id="copyBtn"
+          class="flex-1 py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700 transition">
+          Copy Link
+        </button>
+        <button id="newBtn"
+          class="flex-1 py-3 bg-gray-200 text-gray-800 rounded-xl font-semibold hover:bg-gray-300 transition">
+          New Link
+        </button>
+      </div>
+
+      <p id="copiedText" class="text-sm text-green-600 mt-2 hidden">✅ Copied to clipboard!</p>
+    </div>
+  </div>
+
+  <!-- SEO Content Section -->
+  <section class="max-w-3xl mx-auto text-center mt-16 px-4">
+    <h2 class="text-2xl font-bold mb-3">What is a YouTube Subscribe Link?</h2>
+    <p class="text-gray-600 mb-4">
+      A YouTube Subscribe Link is a special URL that prompts visitors to subscribe to your YouTube channel instantly. 
+      By adding <code>?sub_confirmation=1</code> to your channel URL, you create an automatic subscribe popup for your viewers.
+    </p>
+    
+    <h3 class="text-xl font-semibold mb-2">How to Create a YouTube Subscribe Link?</h3>
+    <ol class="text-gray-600 list-decimal list-inside text-left mx-auto max-w-md">
+      <li>Copy your YouTube channel URL.</li>
+      <li>Paste it into the generator above.</li>
+      <li>Click "Generate Subscribe Link" to get your new auto-subscribe link.</li>
+      <li>Share it on social media, emails, or your website to boost subscribers.</li>
+    </ol>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2">Why Use a Subscribe Link Generator?</h3>
+    <p class="text-gray-600">
+      It saves time and helps creators increase channel engagement effortlessly. 
+      You can generate a working YouTube subscription link online without any technical setup — 100% free and instant.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 text-center text-gray-500 text-sm">
+    Made with ❤️ by <a href="https://www.instagram.com/imjituchauhan/" target="_blank" class="text-blue-600 hover:underline">Jitu Chauhan</a>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const generateBtn = document.getElementById('generateBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const newBtn = document.getElementById('newBtn');
+    const youtubeLink = document.getElementById('youtubeLink');
+    const result = document.getElementById('result');
+    const copiedText = document.getElementById('copiedText');
+    const outputSection = document.getElementById('outputSection');
+
+    generateBtn.addEventListener('click', () => {
+      const url = youtubeLink.value.trim();
+      if (!url) {
+        alert("Please enter a valid YouTube link.");
+        return;
+      }
+      const finalLink = url.includes('?') ? url + '&sub_confirmation=1' : url + '?sub_confirmation=1';
+      result.value = finalLink;
+      outputSection.classList.remove('hidden');
+    });
+
+    copyBtn.addEventListener('click', () => {
+      if (result.value) {
+        navigator.clipboard.writeText(result.value);
+        copiedText.classList.remove('hidden');
+        setTimeout(() => copiedText.classList.add('hidden'), 2000);
+      }
+    });
+
+    newBtn.addEventListener('click', () => {
+      youtubeLink.value = '';
+      result.value = '';
+      outputSection.classList.add('hidden');
+      copiedText.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
